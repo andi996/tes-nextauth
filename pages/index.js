@@ -22,7 +22,10 @@ export default function Home() {
 
       {!session && (
         <>
-          <button className={styles.primaryButton} onClick={() => signIn()}>
+          <button
+            className={styles.primaryButton}
+            onClick={() => signIn("google")}
+          >
             Sign In
           </button>
         </>
